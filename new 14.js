@@ -11,3 +11,10 @@ div
   float:left;
   margin: 50px;
 }
+
+
+
+let array = [{id: 1, name: "John"}, {id: 2, name: "Jane"}, {id: 3, name: "Bob"}];
+
+let index = array.findIndex(obj => obj.name === "Jane");
+console.log(index);  // Output: 1
