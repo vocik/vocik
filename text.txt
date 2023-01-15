@@ -13,15 +13,11 @@
 
 
 
-
-
 div
 {
   float:left;
   margin: 10px;
 }
-
-
 
 
 
@@ -43,6 +39,7 @@ let zakoupenoPole = [];
 function pridatDoVozu() {
   console.log(poleProduktu);
     if (poleProduktu.length == 0) {
+        printAll();
         alert("Už máte všechno, co můžeme nabídnout!")
         printAll();
         console.log(poleProduktu);
@@ -60,6 +57,7 @@ function pridatDoVozu() {
     while (true) {
         if (poleProduktu.length == 0) {
             alert("Už máte všechno")
+            printAll();
             return;
         }
         let vyberuSiJeste = prompt("Co ještě nabídneme");
@@ -77,6 +75,7 @@ function pridatDoVozu() {
             return;
         }
     }
+  printAll();
 }
 function odebratZVozu() {
     if (zakoupenoPole.length == 0) {
